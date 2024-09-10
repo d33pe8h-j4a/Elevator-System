@@ -1,42 +1,113 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Input Component */
+.input-container {
+    width: 100%; /* w-full */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.input-label {
+    display: inline-block; /* inline-block */
+    margin-bottom: 4px; /* mb-1 (approx 0.25rem) */
+    padding-left: 4px; /* pl-1 (approx 0.25rem) */
 }
 
-.card {
-  padding: 2em;
+.input-field {
+    padding: 8px 12px; /* px-3 py-2 */
+    border-radius: 8px; /* rounded-lg */
+    background-color: white; /* bg-white */
+    color: black; /* text-black */
+    outline: none; /* outline-none */
+    transition: background-color 200ms; /* duration-200 */
+    border: 1px solid #e5e7eb; /* border and border-gray-200 */
+    width: 100%; /* w-full */
 }
 
-.read-the-docs {
-  color: #888;
+.input-field:focus {
+    background-color: #f9fafb; /* focus:bg-gray-50 */
+}
+
+/* Button Component */
+.button {
+    padding-left: 1rem; /* Equivalent to px-4 */
+    padding-right: 1rem;
+    padding-top: 0.5rem; /* Equivalent to py-2 */
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    background-color: #e6d9a2; /* Equivalent to bg-blue-600 */
+    color: #624e88; /* Equivalent to text-white */
+}
+
+/* Elevator button */
+/* .elevatorButtons {
+    display: flex;
+    width: 100%;
+    height: 370px;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.btn-container {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.btn-container.bottom {
+    flex-basis: 100%;
+}
+
+.elevator.btn-floor {
+    position: relative;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 2px solid lightgray;
+    box-shadow: inset 0px 0px 2px 1px gray,
+        inset 0px -3px 4px rgba(0, 0, 0, 0.3),
+        inset 0px 3px 4px rgba(255, 255, 255, 0.6),
+        0px -2px 3px rgba(0, 0, 0, 0.6), 0px 1px 2px rgba(255, 255, 255, 0.7),
+        0px 0px 1px 1px black, 0px 0px 0px 5px gray, 0px 0px 1px 6px black;
+    display: block;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+    color: #3c3c3c;
+    outline: none;
+}
+
+.elevator.btn-floor:hover {
+    border-color: lime;
+}
+
+.elevator.btn-floor:active,
+.elevator.btn-floor.active {
+    background: lime;
+    color: #aaffaa;  Approximation of lighten(lime, 40%) 
+    border-color: green;
+} */
+
+/* Temporary css */
+.temp-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
 }
